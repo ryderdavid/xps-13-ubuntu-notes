@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
+# exec &> ~/Desktop/logfile.txt
 
-source ~/bin/newtermtab/venv/bin/activate
+source ~/bin/ntt_venv/bin/activate
 
-python ~/bin/newtermtab/new_term_tab.py
+which python
+
+~/bin/ntt_venv/bin/python ~/bin/newtermtab.py

@@ -4,6 +4,8 @@ import os
 import time
 from pynput.keyboard import Key, Controller
 
+# subprocess.Popen(['source', 'venv/bin/activate'])
+
 windows = subprocess.check_output(["wmctrl", "-l"]).decode('utf-8').strip()
 
 user = subprocess.check_output(['whoami']).decode('utf_8').strip()
