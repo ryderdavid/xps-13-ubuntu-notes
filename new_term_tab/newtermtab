@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+source ~/bin/newtermtab/venv/bin/activate
+
+python ~/bin/newtermtab/new_term_tab.py
