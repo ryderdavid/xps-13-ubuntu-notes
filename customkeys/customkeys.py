@@ -13,7 +13,7 @@ import subprocess
 import time
 import re
 
-def customkeys(delay=0):
+def customkeys():
     
     cmds = [
         r'xmodmap -e "keycode 66 = Mode_switch"',
@@ -28,8 +28,6 @@ def customkeys(delay=0):
         r'xmodmap -e "keycode 65 = space space Menu Menu"',
         r'xmodmap -e "keycode 22 = BackSpace BackSpace Delete Delete"',
     ]
-    
-    time.sleep(delay)
     
     for cmd in cmds:
         subprocess.Popen(cmd, shell=True)
@@ -58,11 +56,11 @@ if __name__ == "__main__":
     
     # run for the first time with 10 second delay
     capslock_off()
-    customkeys(delay=10)
+    customkeys()
     
     while True:
         time.sleep(2)
         if is_capslock_capslock() == True:
             capslock_off()
-            customkeys(delay=0)
+            customkeys()
 
