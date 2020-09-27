@@ -1,6 +1,4 @@
-# Ubuntu Tweaks
-
-## Enable Suspend to Hibernate
+# Enable Suspend to Hibernate
 
 1. Disable secure boot in BIOS
 2. `sudo nano /etc/systemd/sleep.conf`: 
@@ -23,3 +21,5 @@ AllowSuspendThenHibernate=yes
 AllowHybridSleep=yes
 HibernateDelaySec=3600
 ```
+
+
