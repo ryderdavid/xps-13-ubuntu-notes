@@ -13,16 +13,16 @@ HibernateDelaySec=3600
 ```
 3. `sudo nano /etc/systemd/logind.conf`:
 
+Add the following or uncomment in `[Login]` section:
+
 ```
-[Sleep]
-AllowSuspend=yes
-AllowHibernation=yes
-AllowSuspendThenHibernate=yes
-AllowHybridSleep=yes
-HibernateDelaySec=3600
+[Login]
+...
+HandleLidSwitch=suspend-then-hibernate
 ```
 
-4. By default Ubuntu cannot time out to suspend-then-hibernate; creating a symlink in `/usr/lib/systemd/system` fixes this:
+4. By default Ubuntu cannot time out to suspend-then-hibernate; 
+creating a symlink in `/usr/lib/systemd/system` fixes this:
 
 ```
 cd /usr/lib/systemd/system
