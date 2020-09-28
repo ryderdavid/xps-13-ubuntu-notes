@@ -22,4 +22,10 @@ AllowHybridSleep=yes
 HibernateDelaySec=3600
 ```
 
+4. By default Ubuntu cannot time out to suspend-then-hibernate; creating a symlink in `/usr/lib/systemd/system` fixes this:
 
+```
+cd /usr/lib/systemd/system
+sudo mv systemd-suspend.service systemd-suspend.service.old
+sudo ln -s systemd-suspend-then-hibernate.service systemd-suspend.service
+```
