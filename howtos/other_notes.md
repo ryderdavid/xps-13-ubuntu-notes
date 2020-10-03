@@ -6,6 +6,7 @@
 | [Reference Guide](https://topics-cdn.dell.com/pdf/command-configure-v43_reference-guide_en-us.pdf)
 | [User's Guide](https://topics-cdn.dell.com/pdf/command-configure-v43_users-guide10_en-us.pdf)
 
+### Adjust Battery Charging Thresholds:
 ```
 sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg=Standard
 sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg=Custom:50-70
