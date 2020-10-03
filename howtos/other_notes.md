@@ -7,6 +7,6 @@
 | [User's Guide](https://topics-cdn.dell.com/pdf/command-configure-v43_users-guide10_en-us.pdf)
 
 ```
-sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg=StandardPrimaryBattChargeCfg=Standard
-sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg=Custom:50-70PrimaryBattChargeCfg=Custom:50-70
+sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg=Standard
+sudo /opt/dell/dcc/cctk --PrimaryBattChargeCfg=Custom:50-70
 ```
